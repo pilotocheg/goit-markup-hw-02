@@ -20,7 +20,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: var(--body-text-size);
   line-height: 1.5;
-  letter-spacing: 0.02rem;
+  letter-spacing: 0.02em;
   color: var(--text-dark-color);
   background-color: var(--background-main-color);
 }
@@ -70,7 +70,7 @@ ul {
   font-weight: 500;
   background-color: var(--accent-color);
   color: var(--text-light-color);
-  letter-spacing: 0.04rem;
+  letter-spacing: 0.04em;
 }
 
 .main-btn:hover,
@@ -94,7 +94,7 @@ ul {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-color);
 }
@@ -154,10 +154,11 @@ ul {
 
 /* section 4 styles */
 
-/* NOTE: added these empty classes because of validator */
 .fourth-section-title {
+  text-align: center;
 }
 
+/* NOTE: added these empty classes because of validator */
 .portfolio-item-title {
 }
 
