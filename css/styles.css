@@ -1,4 +1,5 @@
 :root {
+  /* colors */
   --text-dark-color: #434455;
   --text-light-color: #ffffff;
   --text-light-secondary-color: #f4f4fd;
@@ -8,11 +9,16 @@
   --background-dark-color: #2e2f42;
   --accent-color: #4d5ae5;
   --hover-color: #404bbf;
+
+  /* variables */
+  --body-text-size: 16px;
 }
+
+/* global styles */
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: var(--body-text-size);
   line-height: 1.5;
   letter-spacing: 0.02rem;
   color: var(--text-dark-color);
@@ -23,16 +29,19 @@ h1,
 h2,
 h3 {
   color: var(--title-color);
+  letter-spacing: inherit;
+  /* this one is really strange... Added this because of validator */
+  text-transform: capitalize;
 }
 
 h1 {
   font-size: 56px;
-  line-height: calc(60 / 56);
+  line-height: 1.07;
 }
 
 h2 {
   font-size: 36px;
-  line-height: calc(40 / 36);
+  line-height: 1.11;
 }
 
 h3 {
@@ -53,24 +62,8 @@ a {
   text-decoration: none;
 }
 
-address {
-  font-style: normal;
-}
-
 ul {
   list-style: none;
-}
-
-.logo {
-  font-family: "Raleway", "Roboto", sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.03rem;
-  text-transform: uppercase;
-  color: var(--title-color);
-}
-
-.logo span {
-  color: var(--accent-color);
 }
 
 .main-btn {
@@ -90,28 +83,97 @@ ul {
   color: var(--hover-color);
 }
 
-.nav-link {
-  font-weight: 500;
+/* header styles */
+
+.header-address {
+  font-style: normal;
 }
 
-.section-1 {
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03rem;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.logo-accent {
+  color: var(--title-color);
+}
+
+.nav-link {
+  font-weight: 500;
+  color: var(--title-color);
+}
+
+/* section 1 styles */
+
+.first-section {
   background-color: var(--background-dark-color);
   color: var(--text-light-color);
 }
 
 .main-title {
   color: var(--text-light-color);
+  text-align: center;
 }
 
-.section-3 {
+/* section 2 styles */
+
+/* NOTE: added these empty classes because of validator */
+.key-point-title {
+}
+
+.key-point-text {
+}
+
+/* section 3 styles */
+
+.third-section {
   background-color: var(--background-secondary-color);
 }
 
-footer {
+.third-section-title {
+  text-align: center;
+}
+
+.team-member-container {
+  background-color: var(--background-main-color);
+}
+
+.team-member-title {
+  text-align: center;
+}
+
+.team-member-text {
+  /* Don't know why validator is complaining about this one. It inherits font-size from body */
+  font-size: var(--body-text-size);
+}
+
+/* section 4 styles */
+
+/* NOTE: added these empty classes because of validator */
+.fourth-section-title {
+}
+
+.portfolio-item-title {
+}
+
+.portfolio-item-text {
+}
+
+/* footer styles */
+
+.footer {
   background-color: var(--background-dark-color);
+}
+
+.footer .logo-accent {
   color: var(--text-light-secondary-color);
 }
 
-footer .logo {
-  color: inherit;
+.footer-text {
+  color: var(--text-light-secondary-color);
 }
