@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02rem;
@@ -42,9 +42,8 @@ h3 {
 }
 
 button {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
   color: inherit;
   cursor: pointer;
 }
@@ -63,7 +62,7 @@ ul {
 }
 
 .logo {
-  font-family: "Raleway", "Roboto", serif;
+  font-family: "Raleway", "Roboto", sans-serif;
   font-weight: 700;
   letter-spacing: 0.03rem;
   text-transform: uppercase;
