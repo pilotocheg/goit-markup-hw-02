@@ -29,7 +29,8 @@ h1,
 h2,
 h3 {
   color: var(--title-color);
-  letter-spacing: inherit;
+  /* NOTE: tried to use `inherit` but validator is complaining about it */
+  letter-spacing: 0.02em;
   /* this one is really strange... Added this because of validator */
   text-transform: capitalize;
 }
